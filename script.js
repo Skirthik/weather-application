@@ -77,7 +77,6 @@ function toggleTheme() {
 }
 
 // Autocomplete basic suggestions
-const suggestions = ["London", "Paris", "New York", "Tokyo", "Delhi", "Mumbai", "Chennai", "Sydney", "Toronto", "Berlin"];
 const datalist = document.getElementById("suggestions");
 suggestions.forEach(city => {
   const option = document.createElement("option");
