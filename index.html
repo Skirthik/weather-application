@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" list="suggestions" />
+    <datalist id="suggestions">
+        <option value="London"></option>
+        <option value="Delhi"></option>
+      <option value="New York"></option>
+      <option value="Tokyo"></option>
+      <option value="Paris"></option>
+      <option value="Chennai"></option>
+      <option value="Berlin"></option>
+      <option value="Mumbai"></option>
+      <option value="Sydney"></option>
+      <option value="Toronto"></option>
+    </datalist>
+    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="getForecast()">Get Forecast</button>
+    <button onclick="getLocationWeather()">Use My Location</button>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+    
+    <div id="weatherInfo"></div>
+    <div id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
